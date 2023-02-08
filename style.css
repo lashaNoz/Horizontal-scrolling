@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Tahome, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  background-color: #c6cff5;
+}
+
+.page {
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  background-color: #c9c4be;
+  border-left: 0.1rem solid #333;
+  width: calc(100% - var(--i) * 4rem);
+  left: calc(100% - var(--j) * 4rem);
+  transition: left 2s;
+}
+
+.page:nth-child(even) {
+  background-color: #abaca4;
+}
+
+.page h3 {
+  font-size: 2rem;
+  word-break: break-all;
+  width: 4rem;
+  padding: 0 1.5rem;
+  text-transform: uppercase;
+  color: #ac3d3d;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.content p {
+  font-size: 5rem;
+  color: #555;
+  text-transform: uppercase;
+  text-align: center;
+}
